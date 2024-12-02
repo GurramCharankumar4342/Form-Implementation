@@ -31,7 +31,7 @@ const Form = () => {
         fields: [
           { name: 'street', type: 'text', label: 'Street', required: true },
           { name: 'city', type: 'text', label: 'City', required: true },
-          { name: 'state', type: 'dropdown', label: 'State', options: ['California', 'Texas', 'New York', 'Telangana', 'Andhra Pradesh', 'Nalgonda', 'Karimnagar', 'Kammmam', 'Nizamabad'], required: true },
+          { name: 'state', type: 'dropdown', label: 'State', options: ['California', 'Texas', 'New York','Telangana','Andhra Pradesh','Nalgonda','Karimnagar','Kammmam','Nizamabad'], required: true },
           { name: 'zipCode', type: 'text', label: 'Zip Code', required: false },
         ],
       },
@@ -61,7 +61,7 @@ const Form = () => {
       return updatedData;
     });
   };
-  //calculating the progress data by  filtering the fileds
+//calculating the progress data by  filtering the fileds
   const calculateProgress = (data) => {
     const totalFields = fields.length;
     const filledFields = Object.keys(data).filter((key) => data[key]).length;
@@ -110,7 +110,7 @@ const Form = () => {
     setIsEditing(true);
     setEditingIndex(index);
   };
-  //handleDelete is used to delete the form data after clicking on the delete button
+//handleDelete is used to delete the form data after clicking on the delete button
   const handleDelete = (updatedData) => {
     setSubmittedData(updatedData);
   };

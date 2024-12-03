@@ -113,6 +113,7 @@ const Form = () => {
 //handleDelete is used to delete the form data after clicking on the delete button
   const handleDelete = (updatedData) => {
     setSubmittedData(updatedData);
+    alert("Data has been successfully deleted!");
   };
 
   return (
